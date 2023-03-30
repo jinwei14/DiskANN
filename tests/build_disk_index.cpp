@@ -68,7 +68,7 @@ int main(int argc, char **argv)
                            "Build complexity for filtered points, higher value "
                            "results in better graphs");
         desc.add_options()("filter_threshold,F", po::value<uint32_t>(&filter_threshold)->default_value(0),
-                           "Threshold to break up the existing nodes to generate new graph "
+                           "Threshold to break up the existing nodes to generate new graph"
                            "internally where each node has a maximum F labels.");
         desc.add_options()("label_type", po::value<std::string>(&label_type)->default_value("uint"),
                            "Storage type of Labels <uint/ushort>, default value is uint which "
